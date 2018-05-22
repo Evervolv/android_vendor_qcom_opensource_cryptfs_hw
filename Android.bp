@@ -13,6 +13,9 @@ commonSharedLibraries = [
 
 cc_library_shared {
     name: "libcryptfs_hw",
+    defaults: [
+      "legacy_hw_disk_encryption_defaults",
+    ],
     header_libs: ["generated_kernel_headers",
                   "libhardware_headers",],
     srcs: sourceFiles,
